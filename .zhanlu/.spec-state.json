@@ -1,0 +1,17 @@
+{
+  "initialized": true,
+  "lastUpdate": 1790750969684,
+  "version": "1.0.0",
+  "scriptCount": 10,
+  "templateCount": 5,
+  "integrity": {
+    "scriptsValid": true,
+    "templatesValid": true,
+    "missingFiles": []
+  },
+  "metadata": {
+    "initializedAt": 1790664541350,
+    "platform": "win32",
+    "extensionVersion": "1.0.0"
+  }
+}

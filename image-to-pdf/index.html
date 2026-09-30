@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image to PDF Online — Free, No Upload</title>
+<link rel="stylesheet" href="/style.css?v=2">
+</head>
+<body>
+<header class="nav"><div class="wrap nav-in">
+  <a class="brand" href="/index.html" aria-label="CrocoFile home"><span class="brand-mark"><img src="/crocofile-logo.png" alt="CrocoFile logo" /></span><span class="brand-name">CrocoFile</span></a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="/#tools">Tools</a><a href="/#privacy">Privacy</a><a class="btn btn-ghost follow-link" href="https://www.instagram.com/vpixcel/" target="_blank" rel="noopener noreferrer">Instagram</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" title="Toggle color theme"></button></nav>
+</div></header>
+<main class="container page-main">
+  <h1>Image to PDF</h1>
+  <p class="lead">Combine JPG, PNG, or WebP images into one PDF.</p>
+  <div class="tool">
+    <div class="dropzone" id="zone">
+      <p><strong>Click or drop images</strong></p>
+      <p>Multiple files allowed</p>
+    </div>
+    <input type="file" id="input" hidden>
+    <div class="thumbs" id="thumbs"></div>
+    <div class="row">
+      <label>Page size:
+        <select id="size">
+          <option value="fit">Fit to image</option>
+          <option value="a4">A4</option>
+          <option value="letter">Letter</option>
+        </select>
+      </label>
+      <button class="btn" id="run" disabled>Create PDF</button>
+    </div>
+    <div id="result" class="result hidden"></div>
+  </div>
+</main>
+<section class="wrap maker-wrap"><div class="maker">
+  <div class="maker-logo"><img src="/vpixel-logo.png" alt="VPIXEL logo" /></div>
+  <div class="maker-text"><h2>Built by VPIXEL</h2><p>I build small, useful web tools and share them on Instagram. Follow along for the next one.</p></div>
+  <a class="btn btn-primary" href="https://www.instagram.com/vpixcel/" target="_blank" rel="noopener noreferrer">Follow @vpixcel</a>
+</div></section>
+<footer class="foot"><div class="wrap foot-in"><span>© <span data-current-year></span> CrocoFile by VPIXEL</span><span class="foot-links"><a href="https://www.instagram.com/vpixcel/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="/#privacy">Privacy</a></span></div></footer>
+
+<script src="/vendor/pdf-lib.min.js"></script>
+<script src="/js/shared/ui.js"></script>
+<script src="/js/shared/file-handler.js?v=3"></script>
+<script src="/js/shared/download.js?v=3"></script>
+<script src="/js/shared/validator.js"></script>
+<script src="/js/image-to-pdf.js?v=3"></script>
+<script src="/script.js?v=1"></script>
+</body>
+</html>

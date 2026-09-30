@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compress PDF to Exact KB Online — Free, No Upload</title>
+<meta name="description" content="Compress PDF to 100KB, 200KB, 500KB or custom size in your browser. No upload, no signup.">
+<link rel="stylesheet" href="/style.css?v=2">
+</head>
+<body>
+<header class="nav"><div class="wrap nav-in">
+  <a class="brand" href="/index.html" aria-label="CrocoFile home"><span class="brand-mark"><img src="/crocofile-logo.png" alt="CrocoFile logo" /></span><span class="brand-name">CrocoFile</span></a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="/#tools">Tools</a><a href="/#privacy">Privacy</a><a class="btn btn-ghost follow-link" href="https://www.instagram.com/vpixcel/" target="_blank" rel="noopener noreferrer">Instagram</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" title="Toggle color theme"></button></nav>
+</div></header>
+<main class="container page-main">
+  <h1>Compress PDF to Exact Size</h1>
+  <p class="lead">Reduce your PDF to a target KB. Runs entirely in your browser.</p>
+
+  <div class="tool">
+    <div class="dropzone" id="zone">
+      <p><strong>Click or drop a PDF</strong></p>
+      <p>Max 50MB</p>
+    </div>
+    <input type="file" id="input" hidden>
+
+    <div class="row">
+      <label>Target KB:
+        <input type="number" id="target" value="200" min="20">
+      </label>
+      <button class="btn secondary" data-preset="100">100KB</button>
+      <button class="btn secondary" data-preset="200">200KB</button>
+      <button class="btn secondary" data-preset="500">500KB</button>
+      <button class="btn" id="run" disabled>Compress</button>
+    </div>
+
+    <div id="result" class="result hidden"></div>
+  </div>
+</main>
+<section class="wrap maker-wrap"><div class="maker">
+  <div class="maker-logo"><img src="/vpixel-logo.png" alt="VPIXEL logo" /></div>
+  <div class="maker-text"><h2>Built by VPIXEL</h2><p>I build small, useful web tools and share them on Instagram. Follow along for the next one.</p></div>
+  <a class="btn btn-primary" href="https://www.instagram.com/vpixcel/" target="_blank" rel="noopener noreferrer">Follow @vpixcel</a>
+</div></section>
+<footer class="foot"><div class="wrap foot-in"><span>© <span data-current-year></span> CrocoFile by VPIXEL</span><span class="foot-links"><a href="https://www.instagram.com/vpixcel/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="/#privacy">Privacy</a></span></div></footer>
+
+<script src="/vendor/pdf.min.js"></script>
+<script src="/vendor/pdf-lib.min.js"></script>
+<script src="/js/shared/ui.js"></script>
+<script src="/js/shared/file-handler.js?v=3"></script>
+<script src="/js/shared/download.js?v=3"></script>
+<script src="/js/shared/validator.js"></script>
+<script src="/js/pdf-compress.js?v=4"></script>
+<script src="/script.js?v=1"></script>
+</body>
+</html>

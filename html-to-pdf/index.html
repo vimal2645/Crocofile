@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML to PDF Converter — Free, No Upload</title>
+  <meta name="description" content="Convert an HTML file or pasted HTML to a PDF in your browser without uploading it." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 20px;">
+      <a href="/index.html" class="logo" aria-label="CrocoFile home" style="display:inline-flex; align-items:center; gap:10px; font-weight:700; color:#e6e8ec; font-size:18px; text-decoration:none;">
+        <span style="display:inline-flex; align-items:center; justify-content:center; width:94px; height:42px; border:1px solid #2a2f3a; border-radius:12px; background:linear-gradient(135deg, #fff, #eef3ff); overflow:hidden;">
+          <img src="/crocofile-logo.png" alt="CrocoFile logo" style="display:block; width:100%; height:100%; padding:5px; object-fit:contain;" />
+        </span>
+        <span>CrocoFile</span>
+      </a>
+      <nav aria-label="Main navigation" style="display:flex; gap:16px;">
+        <a href="/index.html#tools">Tools</a>
+        <a href="/index.html#privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>HTML to PDF Converter — Free, No Upload</h1>
+    <p class="lead">Convert HTML content or an HTML file to PDF. Files never leave your device. 100% private.</p>
+
+    <div class="tool">
+      <div class="dropzone" id="zone">
+        <p><strong>Click or drop an HTML file</strong></p>
+        <p>Supports .html and .htm</p>
+      </div>
+      <input type="file" id="input" hidden />
+
+      <div class="row" style="margin-top:16px; flex-direction:column; align-items:stretch;">
+        <label for="htmlText">Paste HTML content</label>
+        <textarea id="htmlText" rows="8" style="width:100%; padding:12px; border:1px solid #2a2f3a; border-radius:8px; background:#22262f; color:#e6e8ec; resize:vertical;">&lt;h1&gt;Hello CrocoFile&lt;/h1&gt;\n&lt;p&gt;This PDF was created directly in your browser.&lt;/p&gt;</textarea>
+      </div>
+
+      <div class="row" style="margin-top:12px; gap:12px; flex-wrap:wrap;">
+        <label>
+          Page size
+          <select id="pageFormat">
+            <option value="a4">A4</option>
+            <option value="letter">Letter</option>
+          </select>
+        </label>
+        <label>
+          Orientation
+          <select id="orientation">
+            <option value="portrait">Portrait</option>
+            <option value="landscape">Landscape</option>
+          </select>
+        </label>
+        <label>Margin <input type="number" id="margin" value="12" min="0" max="50" /></label>
+      </div>
+
+      <div class="row" style="margin-top:12px; gap:12px; flex-wrap:wrap;">
+        <label>Image quality <input type="number" id="imageQuality" value="0.92" min="0.5" max="1" step="0.01" /></label>
+        <label>Scale <input type="number" id="scale" value="2" min="1" max="4" step="1" /></label>
+      </div>
+
+      <div class="row" style="margin-top:12px; gap:12px; flex-wrap:wrap;">
+        <label>Header <input type="text" id="headerText" placeholder="Page {page}" /></label>
+        <label>Footer <input type="text" id="footerText" placeholder="{date}" /></label>
+      </div>
+
+      <div class="row">
+        <button class="btn" id="run">Convert to PDF</button>
+      </div>
+      <p class="lead" style="margin-top:16px;">Output is image-based. Text is not selectable. Best for visual fidelity.</p>
+      <div id="result" class="result hidden"></div>
+    </div>
+
+    <div style="margin-top:28px;">
+      <h2>FAQ</h2>
+      <p><strong>Is my file uploaded?</strong> No. Everything runs locally in your browser.</p>
+      <p><strong>Is it free?</strong> Yes. This tool is completely free to use.</p>
+      <p><strong>What formats are supported?</strong> HTML files and pasted HTML can be converted to PDF.</p>
+    </div>
+
+    <p style="margin-top:24px;"><a href="/index.html">Back to home</a></p>
+  </main>
+
+  <footer class="site">
+    © <span id="year"></span> CrocoFile by VPIXEL
+  </footer>
+
+  <script src="/js/shared/ui.js"></script>
+  <script src="/js/shared/file-handler.js"></script>
+  <script src="/js/shared/download.js"></script>
+  <script src="/js/shared/validator.js"></script>
+  <script src="/vendor/html-to-pdf-document.bundle.js"></script>
+  <script src="/js/html-to-pdf.js"></script>
+  <script src="/script.js?v=1"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

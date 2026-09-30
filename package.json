@@ -1,0 +1,24 @@
+{
+  "name": "pdf-saas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build:vendor": "esbuild js/vendor/reamkit-entry.js --bundle --minify --format=iife --outfile=vendor/reamkit.bundle.js && esbuild js/vendor/excelintopdf-entry.js --bundle --minify --format=iife --outfile=vendor/excelintopdf.bundle.js && esbuild js/vendor/html-to-pdf-entry.js --bundle --minify --format=iife --outfile=vendor/html-to-pdf-document.bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "excelintopdf": "^0.1.1",
+    "fast-xml-parser": "^5.11.2",
+    "fflate": "^0.8.3",
+    "html-to-pdf-document": "^0.2.6",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "reamkit": "^1.30.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

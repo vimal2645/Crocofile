@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF to Image Online — Free, No Upload</title>
+<link rel="stylesheet" href="/style.css?v=2">
+</head>
+<body>
+<header class="nav"><div class="wrap nav-in">
+  <a class="brand" href="/index.html" aria-label="PDF Toolkit home"><span class="logo-slot" aria-label="PDF Toolkit logo space"></span><span class="brand-name">PDF Toolkit</span></a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="/#tools">Tools</a><a href="/#privacy">Privacy</a><a class="btn btn-ghost follow-link" href="https://www.instagram.com/vpixcel/" target="_blank" rel="noopener noreferrer">Instagram</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" title="Toggle color theme"></button></nav>
+</div></header>
+<main class="container page-main">
+  <h1>PDF to Image</h1>
+  <p class="lead">Export PDF pages as PNG or JPG. Each page downloads separately.</p>
+  <div class="tool">
+    <div class="dropzone" id="zone">
+      <p><strong>Click or drop a PDF</strong></p>
+    </div>
+    <input type="file" id="input" hidden>
+    <div class="row">
+      <label>Format:
+        <select id="format">
+          <option value="image/png">PNG</option>
+          <option value="image/jpeg">JPG</option>
+        </select>
+      </label>
+      <label>Scale:
+        <select id="scale">
+          <option value="1">72 DPI</option>
+          <option value="2" selected>144 DPI</option>
+          <option value="4">288 DPI</option>
+        </select>
+      </label>
+      <button class="btn" id="run" disabled>Convert</button>
+    </div>
+    <div id="result" class="result hidden"></div>
+  </div>
+</main>
+<section class="wrap maker-wrap"><div class="maker">
+  <div class="maker-logo"><span class="logo-slot-vpixel" aria-label="VPIXEL logo space"></span></div>
+  <div class="maker-text"><h2>Built by VPIXEL</h2><p>I build small, useful web tools and share them on Instagram. Follow along for the next one.</p></div>
+  <a class="btn btn-primary" href="https://www.instagram.com/vpixcel/" target="_blank" rel="noopener noreferrer">Follow @vpixcel</a>
+</div></section>
+<footer class="foot"><div class="wrap foot-in"><span>© <span data-current-year></span> PDF Toolkit by VPIXEL</span><span class="foot-links"><a href="https://www.instagram.com/vpixcel/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="/#privacy">Privacy</a></span></div></footer>
+
+<script src="/vendor/pdf.min.js"></script>
+<script src="/js/shared/ui.js"></script>
+<script src="/js/shared/file-handler.js?v=3"></script>
+<script src="/js/shared/download.js?v=3"></script>
+<script src="/js/shared/validator.js"></script>
+<script src="/js/pdf-to-image.js?v=3"></script>
+<script src="/script.js?v=1"></script>
+</body>
+</html>

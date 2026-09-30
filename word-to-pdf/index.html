@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Word to PDF Converter — Free, No Upload</title>
+  <meta name="description" content="Convert DOC and DOCX files to PDF in your browser. Fast, free, and private." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 20px;">
+      <a href="/index.html" class="logo" aria-label="CrocoFile home" style="display:inline-flex; align-items:center; gap:10px; font-weight:700; color:#e6e8ec; font-size:18px; text-decoration:none;">
+        <span style="display:inline-flex; align-items:center; justify-content:center; width:94px; height:42px; border:1px solid #2a2f3a; border-radius:12px; background:linear-gradient(135deg, #fff, #eef3ff); overflow:hidden;">
+          <img src="/crocofile-logo.png" alt="CrocoFile logo" style="display:block; width:100%; height:100%; padding:5px; object-fit:contain;" />
+        </span>
+        <span>CrocoFile</span>
+      </a>
+      <nav aria-label="Main navigation" style="display:flex; gap:16px;">
+        <a href="/index.html#tools">Tools</a>
+        <a href="/index.html#privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Word to PDF Converter — Free, No Upload</h1>
+    <p class="lead">Convert DOCX or DOC files to PDF directly in your browser. Files never leave your device. 100% private.</p>
+
+    <div class="tool">
+      <div class="dropzone" id="zone">
+        <p><strong>Click or drop a Word file</strong></p>
+        <p>Supports .doc and .docx</p>
+      </div>
+      <input type="file" id="input" hidden />
+      <div class="row">
+        <button class="btn" id="run" disabled>Convert to PDF</button>
+      </div>
+      <p class="lead" style="margin-top:16px;">Best for simple-to-moderate documents. Complex layouts, charts, and exotic fonts may not convert perfectly.</p>
+      <div id="result" class="result hidden"></div>
+    </div>
+
+    <div style="margin-top:28px;">
+      <h2>FAQ</h2>
+      <p><strong>Is my file uploaded?</strong> No. Everything runs locally in your browser.</p>
+      <p><strong>Is it free?</strong> Yes. This tool is completely free to use.</p>
+      <p><strong>What formats are supported?</strong> DOC and DOCX files can be converted to PDF.</p>
+    </div>
+
+    <p style="margin-top:24px;"><a href="/index.html">Back to home</a></p>
+  </main>
+
+  <footer class="site">
+    © <span id="year"></span> CrocoFile by VPIXEL
+  </footer>
+
+  <script src="/js/shared/ui.js"></script>
+  <script src="/js/shared/file-handler.js"></script>
+  <script src="/js/shared/download.js"></script>
+  <script src="/js/shared/validator.js"></script>
+  <script src="/vendor/reamkit.bundle.js"></script>
+  <script src="/js/word-to-pdf.js"></script>
+  <script src="/script.js?v=1"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
