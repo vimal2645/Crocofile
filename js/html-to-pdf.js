@@ -51,6 +51,7 @@
 
   runBtn.addEventListener('click', async () => {
     showSpinner(runBtn, 'Creating PDF...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const converterFactory = window.htmlToPDF;
       if (!converterFactory) {

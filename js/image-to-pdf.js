@@ -79,6 +79,7 @@
   runBtn.addEventListener('click', async () => {
     if (!images.length) return;
     showSpinner(runBtn, 'Building PDF...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const doc = await PDFDocument.create();
       const mode = sizeEl.value;

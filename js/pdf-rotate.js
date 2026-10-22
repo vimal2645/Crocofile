@@ -82,6 +82,7 @@
   runBtn.addEventListener('click', async () => {
     if (!srcBytes) return;
     showSpinner(runBtn, 'Saving...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const doc = await PDFDocument.load(srcBytes.slice(0));
       doc.getPages().forEach((p, i) => p.setRotation(degrees(rotations[i])));

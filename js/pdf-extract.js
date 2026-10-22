@@ -61,6 +61,7 @@
   runBtn.addEventListener('click', async () => {
     if (!srcBytes || !selected.size) return showToast('Select pages first.', 'error');
     showSpinner(runBtn, 'Extracting...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const src = await PDFDocument.load(srcBytes.slice(0));
       const out = await PDFDocument.create();

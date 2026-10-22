@@ -78,6 +78,7 @@
   runBtn.addEventListener('click', async () => {
     if (!srcBytes || !order.length) return showToast('Nothing to save.', 'error');
     showSpinner(runBtn, 'Saving...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const src = await PDFDocument.load(srcBytes.slice(0));
       const out = await PDFDocument.create();

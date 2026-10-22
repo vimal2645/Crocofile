@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/image-compress/</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-compress/</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-merge/</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-split/</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-rotate/</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-extract/</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-organize/</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/image-to-pdf/</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-to-image/index.html</loc></url>
-  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-compress-to%20-100kb/</loc></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/image-compress/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-compress/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-compress-to-100kb/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-merge/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-split/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-rotate/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-extract/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-organize/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/image-to-pdf/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/pdf-to-image/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/word-to-pdf/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/excel-to-pdf/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/html-to-pdf/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://crocofile.vimalprakashgnesvns.workers.dev/spreadsheet-to-pdf/</loc><lastmod>2026-10-21</lastmod></url>
 </urlset>

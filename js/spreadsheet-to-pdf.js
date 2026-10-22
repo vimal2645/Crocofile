@@ -57,6 +57,7 @@
     }
 
     showSpinner(runBtn, 'Converting...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const excelLib = window.excelintopdf || window.excelIntoPdf || (window.excelintopdf && window.excelintopdf.default);
       const readWorkbook = (excelLib && (excelLib.readWorkbook || excelLib.default && excelLib.default.readWorkbook));

@@ -31,6 +31,7 @@
     }
 
     showSpinner(runBtn, 'Converting...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const ReamCtor = window.Ream || (window.reamkit && window.reamkit.Ream) || (window.ReamKit && window.ReamKit.Ream);
       if (!ReamCtor || typeof ReamCtor.parse !== 'function') {

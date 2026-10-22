@@ -59,6 +59,7 @@
 
   runBtn.addEventListener('click', async () => {
     showSpinner(runBtn, 'Merging...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const out = await PDFDocument.create();
       for (const f of files) {

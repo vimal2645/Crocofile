@@ -88,6 +88,7 @@
 
     showSpinner(runBtn, 'Compressing...');
     resultEl.classList.add('hidden');
+    await new Promise(resolve => setTimeout(resolve, 0));
 
     try {
       currentBlob = await compressToTarget(currentFile, targetKB);

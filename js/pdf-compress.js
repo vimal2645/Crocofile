@@ -9,7 +9,8 @@
   let currentBlob = null;
 
   const requestedTarget = new URLSearchParams(window.location.search).get('target');
-  const targetKB = ['100', '200', '500'].includes(requestedTarget) ? Number(requestedTarget) : 200;
+  const defaultTarget = window.location.pathname.replace(/\/+$/, '') === '/pdf-compress-to-100kb' ? 100 : 200;
+  const targetKB = ['100', '200', '500'].includes(requestedTarget) ? Number(requestedTarget) : defaultTarget;
 
   setupDropZone(zone, input, {
     accept: 'application/pdf',
@@ -57,8 +58,9 @@
     if (!currentFile) return;
 
     showSpinner(runBtn, 'Estimating...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     showProgress('Estimating achievable size from the first pages...');
-    activeWorker = new Worker('/js/pdf-compress-worker.js?v=7');
+    activeWorker = new Worker('/js/pdf-compress-worker.js?v=8');
     activeWorker.onmessage = event => {
       const data = event.data;
       if (data.type === 'estimate') {

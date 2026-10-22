@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/crocofile-logo.png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Word to PDF Converter — Free, No Upload</title>
-  <meta name="description" content="Convert DOC and DOCX files to PDF in your browser. Fast, free, and private." />
+  <title>Word to PDF Converter Online (DOCX, DOC) | CrocoFile</title>
+  <meta name="description" content="Convert DOC and DOCX documents to PDF for free in your browser. No upload; best for straightforward layouts." />
+  <link rel="canonical" href="https://crocofile.vimalprakashgnesvns.workers.dev/word-to-pdf/" />
+  <meta property="og:title" content="Word to PDF Converter Online (DOCX, DOC) | CrocoFile" />
+  <meta property="og:description" content="Convert DOC and DOCX documents to PDF for free in your browser. No upload; best for straightforward layouts." />
+  <meta property="og:url" content="https://crocofile.vimalprakashgnesvns.workers.dev/word-to-pdf/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CrocoFile" />
+  <meta property="og:image" content="https://crocofile.vimalprakashgnesvns.workers.dev/crocofile-logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Word to PDF Converter",
+        "url": "https://crocofile.vimalprakashgnesvns.workers.dev/word-to-pdf/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is this tool free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can use it for free." } },
+          { "@type": "Question", "name": "Are my files uploaded?", "acceptedAnswer": { "@type": "Answer", "text": "No. Documents are processed in your browser and are not uploaded." } },
+          { "@type": "Question", "name": "What formats are supported?", "acceptedAnswer": { "@type": "Answer", "text": "It accepts DOC and DOCX files and creates a PDF." } }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
   <header class="site">
     <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 20px;">
-      <a href="/index.html" class="logo" aria-label="CrocoFile home" style="display:inline-flex; align-items:center; gap:10px; font-weight:700; color:#e6e8ec; font-size:18px; text-decoration:none;">
+      <a href="/" class="logo" aria-label="CrocoFile home" style="display:inline-flex; align-items:center; gap:10px; font-weight:700; color:#e6e8ec; font-size:18px; text-decoration:none;">
         <span style="display:inline-flex; align-items:center; justify-content:center; width:94px; height:42px; border:1px solid #2a2f3a; border-radius:12px; background:linear-gradient(135deg, #fff, #eef3ff); overflow:hidden;">
-          <img src="/crocofile-logo.png" alt="CrocoFile logo" style="display:block; width:100%; height:100%; padding:5px; object-fit:contain;" />
+          <img src="/crocofile-logo.png" alt="CrocoFile logo" width="2172" height="724" style="display:block; width:100%; height:100%; padding:5px; object-fit:contain;" />
         </span>
         <span>CrocoFile</span>
       </a>
       <nav aria-label="Main navigation" style="display:flex; gap:16px;">
-        <a href="/index.html#tools">Tools</a>
-        <a href="/index.html#privacy">Privacy</a>
+        <a href="/#tools">Tools</a>
+        <a href="/#privacy">Privacy</a>
       </nav>
     </div>
   </header>
@@ -40,14 +74,18 @@
       <div id="result" class="result hidden"></div>
     </div>
 
+    <section class="seo-copy">
+      <p>Convert a Word document into PDF when you need a format that is easy to share, print, or submit without relying on the recipient’s editing software. Choose a DOC or DOCX file and create a PDF directly in your browser. The conversion does not upload the document. This tool is best suited to simple or moderately formatted documents; complex layouts, charts, and unusual fonts may not look exactly like the original, so review the output before sending it. Use it for letters, basic reports, and other Word files where a PDF copy is helpful. The original document remains unchanged, and the generated PDF can be downloaded when the conversion is complete.</p>
+    </section>
     <div style="margin-top:28px;">
       <h2>FAQ</h2>
-      <p><strong>Is my file uploaded?</strong> No. Everything runs locally in your browser.</p>
-      <p><strong>Is it free?</strong> Yes. This tool is completely free to use.</p>
-      <p><strong>What formats are supported?</strong> DOC and DOCX files can be converted to PDF.</p>
+      <details><summary>Is this tool free?</summary><p>Yes. You can use it for free.</p></details>
+      <details><summary>Are my files uploaded?</summary><p>No. Documents are processed in your browser and are not uploaded.</p></details>
+      <details><summary>What formats are supported?</summary><p>It accepts DOC and DOCX files and creates a PDF.</p></details>
     </div>
 
-    <p style="margin-top:24px;"><a href="/index.html">Back to home</a></p>
+    <p><strong>Related tools:</strong> <a href="/excel-to-pdf/">Excel to PDF</a> · <a href="/html-to-pdf/">HTML to PDF</a> · <a href="/spreadsheet-to-pdf/">Spreadsheet to PDF</a></p>
+    <p style="margin-top:24px;"><a href="/">Back to home</a></p>
   </main>
 
   <footer class="site">
@@ -59,8 +97,9 @@
   <script src="/js/shared/download.js"></script>
   <script src="/js/shared/validator.js"></script>
   <script src="/vendor/reamkit.bundle.js"></script>
-  <script src="/js/word-to-pdf.js"></script>
+  <script src="/js/word-to-pdf.js?v=2"></script>
   <script src="/script.js?v=1"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9119d1bc53a84622b689918b862b6f23"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

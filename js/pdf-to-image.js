@@ -26,6 +26,7 @@
   runBtn.addEventListener('click', async () => {
     if (!currentFile) return;
     showSpinner(runBtn, 'Converting...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const outputs = [];
       const buf = await currentFile.arrayBuffer();

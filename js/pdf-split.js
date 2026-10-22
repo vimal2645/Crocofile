@@ -51,6 +51,7 @@
     if (!currentFile) return;
     const mode = document.querySelector('input[name="mode"]:checked').value;
     showSpinner(runBtn, 'Splitting...');
+    await new Promise(resolve => setTimeout(resolve, 0));
     try {
       const buf = await currentFile.arrayBuffer();
       const src = await PDFDocument.load(buf);

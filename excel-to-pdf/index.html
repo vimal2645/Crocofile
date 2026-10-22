@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/crocofile-logo.png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Excel to PDF Converter — Free, No Upload</title>
-  <meta name="description" content="Convert XLS, XLSX, and CSV spreadsheet files to PDF in your browser." />
+  <title>Excel to PDF Converter Online (XLSX, XLS) | CrocoFile</title>
+  <meta name="description" content="Convert XLS, XLSX, or CSV spreadsheets to PDF for free in your browser. No upload; set page layout, scaling, headers, and optional protections." />
+  <link rel="canonical" href="https://crocofile.vimalprakashgnesvns.workers.dev/excel-to-pdf/" />
+  <meta property="og:title" content="Excel to PDF Converter Online (XLSX, XLS) | CrocoFile" />
+  <meta property="og:description" content="Convert XLS, XLSX, or CSV spreadsheets to PDF for free in your browser. No upload; set page layout, scaling, headers, and optional protections." />
+  <meta property="og:url" content="https://crocofile.vimalprakashgnesvns.workers.dev/excel-to-pdf/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CrocoFile" />
+  <meta property="og:image" content="https://crocofile.vimalprakashgnesvns.workers.dev/crocofile-logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Excel to PDF Converter",
+        "url": "https://crocofile.vimalprakashgnesvns.workers.dev/excel-to-pdf/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is this tool free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can use it for free." } },
+          { "@type": "Question", "name": "Are my files uploaded?", "acceptedAnswer": { "@type": "Answer", "text": "No. Spreadsheets are processed in your browser and are not uploaded." } },
+          { "@type": "Question", "name": "What formats are supported?", "acceptedAnswer": { "@type": "Answer", "text": "It accepts XLS, XLSX, and CSV files and creates a PDF." } }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
   <header class="site">
     <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 20px;">
-      <a href="/index.html" class="logo" aria-label="CrocoFile home" style="display:inline-flex; align-items:center; gap:10px; font-weight:700; color:#e6e8ec; font-size:18px; text-decoration:none;">
+      <a href="/" class="logo" aria-label="CrocoFile home" style="display:inline-flex; align-items:center; gap:10px; font-weight:700; color:#e6e8ec; font-size:18px; text-decoration:none;">
         <span style="display:inline-flex; align-items:center; justify-content:center; width:94px; height:42px; border:1px solid #2a2f3a; border-radius:12px; background:linear-gradient(135deg, #fff, #eef3ff); overflow:hidden;">
-          <img src="/crocofile-logo.png" alt="CrocoFile logo" style="display:block; width:100%; height:100%; padding:5px; object-fit:contain;" />
+          <img src="/crocofile-logo.png" alt="CrocoFile logo" width="2172" height="724" style="display:block; width:100%; height:100%; padding:5px; object-fit:contain;" />
         </span>
         <span>CrocoFile</span>
       </a>
       <nav aria-label="Main navigation" style="display:flex; gap:16px;">
-        <a href="/index.html#tools">Tools</a>
-        <a href="/index.html#privacy">Privacy</a>
+        <a href="/#tools">Tools</a>
+        <a href="/#privacy">Privacy</a>
       </nav>
     </div>
   </header>
@@ -86,14 +120,18 @@
       <div id="result" class="result hidden"></div>
     </div>
 
+    <section class="seo-copy">
+      <p>Convert a spreadsheet to PDF when you want to share or print its information in a fixed-page document. This converter accepts XLS, XLSX, and CSV files and lets you set the page size, orientation, and fit mode before creating the output. You can also configure repeated header rows, bookmarks, password protection, watermarks, and header or footer text. Processing takes place in your browser, so the spreadsheet is not uploaded. These options help adapt a workbook or CSV export for review, distribution, or printing. Spreadsheet layouts vary, so check the generated PDF for clipped columns, page breaks, and readability before sharing. The downloaded PDF is a separate output; your source spreadsheet remains unchanged.</p>
+    </section>
     <div style="margin-top:28px;">
       <h2>FAQ</h2>
-      <p><strong>Is my file uploaded?</strong> No. Everything runs locally in your browser.</p>
-      <p><strong>Is it free?</strong> Yes. This tool is completely free to use.</p>
-      <p><strong>What formats are supported?</strong> CSV, XLS, and XLSX files can be converted to PDF.</p>
+      <details><summary>Is this tool free?</summary><p>Yes. You can use it for free.</p></details>
+      <details><summary>Are my files uploaded?</summary><p>No. Spreadsheets are processed in your browser and are not uploaded.</p></details>
+      <details><summary>What formats are supported?</summary><p>It accepts XLS, XLSX, and CSV files and creates a PDF.</p></details>
     </div>
 
-    <p style="margin-top:24px;"><a href="/index.html">Back to home</a></p>
+    <p><strong>Related tools:</strong> <a href="/spreadsheet-to-pdf/">Spreadsheet to PDF</a> · <a href="/word-to-pdf/">Word to PDF</a> · <a href="/html-to-pdf/">HTML to PDF</a></p>
+    <p style="margin-top:24px;"><a href="/">Back to home</a></p>
   </main>
 
   <footer class="site">
@@ -105,8 +143,9 @@
   <script src="/js/shared/download.js"></script>
   <script src="/js/shared/validator.js"></script>
   <script src="/vendor/excelintopdf.bundle.js"></script>
-  <script src="/js/excel-to-pdf.js"></script>
+  <script src="/js/excel-to-pdf.js?v=2"></script>
   <script src="/script.js?v=1"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9119d1bc53a84622b689918b862b6f23"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

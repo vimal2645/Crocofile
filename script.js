@@ -16,19 +16,19 @@ const icon = {
 
 // Keep these links aligned with the real HTML files in this project.
 const TOOLS = [
-  { title: 'Image Compress', description: 'Shrink JPG, PNG or WebP to an exact size in KB.', href: '/image-compress/index.html', category: 'Image', icon: 'image', tone: '#ffb454', tag: 'Popular' },
+  { title: 'Image Compress', description: 'Shrink JPG, PNG or WebP to an exact size in KB.', href: '/image-compress/', category: 'Image', icon: 'image', tone: '#ffb454', tag: 'Popular' },
   { title: 'Word to PDF', description: 'Convert DOCX or DOC to PDF in your browser.', href: '/word-to-pdf/', category: 'Convert', icon: 'toPdf', tone: '#38bdf8' },
   { title: 'Excel to PDF', description: 'Convert XLSX or XLS to PDF with page-break control.', href: '/excel-to-pdf/', category: 'Convert', icon: 'toPdf', tone: '#22c55e' },
   { title: 'HTML to PDF', description: 'Convert HTML or web pages to PDF.', href: '/html-to-pdf/', category: 'Convert', icon: 'toPdf', tone: '#f59e0b' },
   { title: 'Spreadsheet to PDF', description: 'Convert CSV, XLSX, or XLS to PDF.', href: '/spreadsheet-to-pdf/', category: 'Convert', icon: 'toPdf', tone: '#a78bfa' },
-  { title: 'PDF Compress', description: 'Reduce a PDF to 100 KB, 200 KB, 500 KB or a custom size.', href: '/pdf-compress/index.html', category: 'PDF', icon: 'compress', tone: '#a99dff', tag: 'Popular' },
-  { title: 'Merge PDF', description: 'Combine multiple PDFs into a single file.', href: '/pdf-merge/index.html', category: 'PDF', icon: 'merge', tone: '#4cc9f0' },
-  { title: 'Split PDF', description: 'Split by page range or into one file per page.', href: '/pdf-split/index.html', category: 'PDF', icon: 'split', tone: '#f472b6' },
-  { title: 'Rotate PDF', description: 'Turn pages 90°, 180° or 270°.', href: '/pdf-rotate/index.html', category: 'PDF', icon: 'rotate', tone: '#3ddc97' },
-  { title: 'Extract Pages', description: 'Pull the pages you pick into a new PDF.', href: '/pdf-extract/index.html', category: 'PDF', icon: 'extract', tone: '#fb923c' },
-  { title: 'Organize PDF', description: 'Reorder or delete pages visually.', href: '/pdf-organize/index.html', category: 'PDF', icon: 'organize', tone: '#a78bfa' },
-  { title: 'Image to PDF', description: 'Combine images into a single PDF.', href: '/image-to-pdf/index.html', category: 'Convert', icon: 'toPdf', tone: '#22d3ee' },
-  { title: 'PDF to Image', description: 'Export PDF pages as PNG or JPG.', href: '/pdf-to-image/index.html', category: 'Convert', icon: 'toImage', tone: '#f87171' }
+  { title: 'PDF Compress', description: 'Reduce a PDF to 100 KB, 200 KB, 500 KB or a custom size.', href: '/pdf-compress/', category: 'PDF', icon: 'compress', tone: '#a99dff', tag: 'Popular' },
+  { title: 'Merge PDF', description: 'Combine multiple PDFs into a single file.', href: '/pdf-merge/', category: 'PDF', icon: 'merge', tone: '#4cc9f0' },
+  { title: 'Split PDF', description: 'Split by page range or into one file per page.', href: '/pdf-split/', category: 'PDF', icon: 'split', tone: '#f472b6' },
+  { title: 'Rotate PDF', description: 'Turn pages 90°, 180° or 270°.', href: '/pdf-rotate/', category: 'PDF', icon: 'rotate', tone: '#3ddc97' },
+  { title: 'Extract Pages', description: 'Pull the pages you pick into a new PDF.', href: '/pdf-extract/', category: 'PDF', icon: 'extract', tone: '#fb923c' },
+  { title: 'Organize PDF', description: 'Reorder or delete pages visually.', href: '/pdf-organize/', category: 'PDF', icon: 'organize', tone: '#a78bfa' },
+  { title: 'Image to PDF', description: 'Combine images into a single PDF.', href: '/image-to-pdf/', category: 'Convert', icon: 'toPdf', tone: '#22d3ee' },
+  { title: 'PDF to Image', description: 'Export PDF pages as PNG or JPG.', href: '/pdf-to-image/', category: 'Convert', icon: 'toImage', tone: '#f87171' }
 ];
 
 const year = document.querySelector('[data-current-year]');
